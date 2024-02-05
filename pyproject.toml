@@ -1,0 +1,23 @@
+[build-system]
+requires = ['setuptools', 'setuptools-scm']
+build-backend = 'setuptools.build_meta'
+[project]
+name = 'photo-finder'
+version = '0.0.1'
+authors = [
+  {name = 'Hanna Shauchanok', email = 'annmaryashd@gmail.com'},
+]
+description = 'Utility for searching and copying photos that match the specified parameters'
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = [
+  'pillow~=10.2.0',
+  'filetype~=1.2.0',
+  'click~=8.1.7',
+]
+requires-python = '>= 3.9'
+keywords = ["photo", "image", "find", "search", "copy"]
+[project.scripts]
+photo-finder = 'main:main'
+[tool.setuptools]
+include-package-data = true
